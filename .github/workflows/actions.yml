@@ -18,7 +18,7 @@ jobs:
           ls -a
       - name: Simple JS Action
         id: greet
-        uses: actions/hello-world-javascript-action@v1
+        uses: actions/hello-world-javascript-action@v3.0.2
         with:
           who-to-greet: Q
       - name: Log Greeting Time
