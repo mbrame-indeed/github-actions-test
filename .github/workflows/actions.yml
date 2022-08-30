@@ -3,8 +3,14 @@ name: Actions Workflow
 # on: [push, pull_request]
 
 on:
-  repository_dispatch:
-    types: [build]
+  push:
+    branches:
+      - master
+      - 'feature/*'
+      - '!feature/IgnoreMe'
+
+#  repository_dispatch:
+#    types: [build]
 #  schedule:
 #    - cron: "0/5 * * * *"
 #    - cron: "0/6 * * * *"
